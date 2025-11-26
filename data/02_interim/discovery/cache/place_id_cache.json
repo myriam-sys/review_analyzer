@@ -1,0 +1,7 @@
+{
+  "_comment": "Cache of place_id resolutions to canonical IDs",
+  "_format": "old_place_id: canonical_place_id",
+  "_example": {
+    "ChIJOzW1234abcde": "ChIJCanonical5678"
+  }
+}

@@ -1,0 +1,18 @@
+cat_id,short,full
+C01,Accueil chaleureux et personnel attentionné,"Accueil chaleureux et personnel attentionné (expérience humaine positive, sentiment d'être bien accueilli)"
+C02,Service client réactif et à l'écoute,"Service client réactif et à l'écoute (problèmes résolus rapidement, vraie disponibilité)"
+C03,Conseil personnalisé et professionnalisme des équipes,"Conseil personnalisé et professionnalisme des équipes (expertise perçue, accompagnement individualisé)"
+C04,Efficacité et rapidité de traitement,"Efficacité et rapidité de traitement (fluidité, peu d'attente, processus clairs)"
+C05,Accessibilité et proximité des services,"Accessibilité et proximité des services (agences, guichets, présence locale, simplicité d'accès)"
+C06,Satisfaction sans détails spécifiques,Satisfaction sans détails spécifiques (le client indique que le service ou l'agence est bien sans explication )
+C07,Expérience digitale et services en ligne pratiques,"Expérience digitale et services en ligne pratiques (application fluide, opérations faciles à distance )"
+C08,Attente interminable et lenteur en agence,"Attente interminable et lenteur en agence (files d'attente, effectifs insuffisants)"
+C09,Service client injoignable ou non réactif,"Service client injoignable ou non réactif (téléphone, e-mail, promesses de rappel non tenues)"
+C10,Réclamations ignorées ou mal suivies,"Réclamations ignorées ou mal suivies (absence de retour, sentiment d'abandon)"
+C11,Incidents techniques et erreurs récurrentes,"Incidents techniques et erreurs récurrentes (cartes bloquées, pannes système, erreurs de compte)"
+C12,Frais bancaires jugés abusifs ou non justifiés,Frais bancaires jugés abusifs ou non justifiés (perception de déséquilibre prix/service)
+C13,Insatisfaction sans détails spécifiques,Insatisfaction sans détails spécifiques (le client indique que le service ou l'agence est nul sans explication )
+C14,Manque de considération ou attitude peu professionnelle,"Manque de considération ou attitude peu professionnelle (accueil froid, ton condescendant, sentiment de mépris)"
+C15,Hors-sujet ou contenu non pertinent,"Hors-sujet ou contenu non pertinent (ex. « Bon restau », « Je cherche du travail »)"
+C16,Autre,Autre (positif)
+C17,Autre,Autre (négatif)

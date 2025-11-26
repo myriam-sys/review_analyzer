@@ -1,0 +1,30 @@
+# Core dependencies
+requests>=2.31.0
+pandas>=2.0.0
+python-dotenv>=1.0.0
+tenacity>=8.2.0
+openai>=1.0.0
+
+# Database dependencies
+duckdb>=1.0.0    # Embedded analytical database
+
+# Optional dependencies
+openpyxl>=3.1.0  # Excel support
+tqdm>=4.65.0     # Progress bars
+pyarrow>=14.0.0  # Parquet support
+nbformat>=4.2.0 # visualization notebooks
+
+# UI dependencies (for Streamlit app)
+streamlit>=1.28.0
+plotly>=5.17.0
+watchdog>=6.0.0
+folium>=0.15.0           # Interactive maps
+streamlit-folium>=0.15.0 # Folium integration for Streamlit
+
+# Development dependencies
+pytest>=7.4.0
+pytest-cov>=4.1.0
+pytest-mock>=3.11.0
+black>=23.0.0
+flake8>=6.0.0
+mypy>=1.5.0

@@ -1,0 +1,33 @@
+# ============================================
+# Review Analyzer - Development Override
+# Use: docker-compose -f docker-compose.yml -f docker-compose.dev.yml up
+# ============================================
+
+services:
+  review-analyzer:
+    build:
+      target: production
+    
+    # Mount source code for live reload
+    volumes:
+      - ./src:/app/src:ro
+      - ./app.py:/app/app.py:ro
+      - ./data/00_config:/app/data/00_config:ro
+      - ./data/01_raw:/app/data/01_raw
+      - ./data/02_interim:/app/data/02_interim
+      - ./data/03_processed:/app/data/03_processed
+      - ./data/04_analysis:/app/data/04_analysis
+      - ./logs:/app/logs
+    
+    # Enable Streamlit development mode
+    environment:
+      - STREAMLIT_SERVER_RUN_ON_SAVE=true
+      - STREAMLIT_SERVER_FILE_WATCHER_TYPE=auto
+    
+    # Override command for development
+    command: >
+      streamlit run app.py
+      --server.port=8501
+      --server.address=0.0.0.0
+      --server.runOnSave=true
+

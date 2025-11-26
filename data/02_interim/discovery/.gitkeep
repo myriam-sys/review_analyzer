@@ -1,0 +1,3 @@
+# Unified places table (Parquet format)
+# Columns: canonical_place_id (PK), business_name, city, address, lat, lng, etc.
+# This file will be created by the discovery pipeline

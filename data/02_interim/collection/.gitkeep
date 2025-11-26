@@ -1,0 +1,3 @@
+# Unified reviews table (Parquet format)
+# Columns: review_id, canonical_place_id, author, date, rating, text, etc.
+# Deduped and minimally cleaned

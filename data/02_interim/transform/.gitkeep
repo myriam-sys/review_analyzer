@@ -1,0 +1,3 @@
+# Transform outputs (Parquet format)
+# reviews_normalized.parquet - dates parsed, lat/lng cleaned
+# reviews_with_region.parquet - after region assignment
