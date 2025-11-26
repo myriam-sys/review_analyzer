@@ -16,10 +16,10 @@ def run_command(cmd, description):
     result = subprocess.run(cmd, shell=True)
     
     if result.returncode != 0:
-        print(f"\n❌ {description} failed with exit code {result.returncode}")
+        print(f"\n[FAIL] {description} failed with exit code {result.returncode}")
         return False
     else:
-        print(f"\n✅ {description} passed")
+        print(f"\n[PASS] {description} passed")
         return True
 
 def main():
@@ -34,7 +34,7 @@ Commands:
   integration - Run integration tests
   fast        - Run unit + integration tests (skip slow tests)
   coverage    - Run all tests with coverage report
-  module NAME - Run tests for specific module (config, utils, discover, collect, classify)
+  module NAME - Run tests for specific module (config, utils, discover, collect, classify, transformers)
   
 Examples:
   python run_tests.py unit
@@ -49,7 +49,7 @@ Examples:
     try:
         subprocess.run(["pytest", "--version"], capture_output=True, check=True)
     except (subprocess.CalledProcessError, FileNotFoundError):
-        print("❌ pytest not found. Please install it:")
+        print("[ERROR] pytest not found. Please install it:")
         print("   python -m pip install pytest pytest-cov pytest-mock")
         sys.exit(1)
     
@@ -86,18 +86,18 @@ Examples:
             "All Tests with Coverage Report"
         )
         if success:
-            print(f"\n📊 Coverage report saved to: {project_root}/htmlcov/index.html")
+            print(f"\n[INFO] Coverage report saved to: {project_root}/htmlcov/index.html")
     
     elif command == "module":
         if len(sys.argv) < 3:
-            print("❌ Please specify module name: config, utils, discover, collect, classify")
+            print("[ERROR] Please specify module name: config, utils, discover, collect, classify, transformers")
             sys.exit(1)
         
         module_name = sys.argv[2]
-        valid_modules = ["config", "utils", "discover", "collect", "classify"]
+        valid_modules = ["config", "utils", "discover", "collect", "classify", "transformers"]
         
         if module_name not in valid_modules:
-            print(f"❌ Invalid module. Choose from: {', '.join(valid_modules)}")
+            print(f"[ERROR] Invalid module. Choose from: {', '.join(valid_modules)}")
             sys.exit(1)
         
         success = run_command(
@@ -106,7 +106,7 @@ Examples:
         )
     
     else:
-        print(f"❌ Unknown command: {command}")
+        print(f"[ERROR] Unknown command: {command}")
         print("Run 'python run_tests.py' for usage information")
         sys.exit(1)
     
