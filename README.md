@@ -192,7 +192,3 @@ pytest tests/ -v --cov=src          # With coverage
 |----------|-------------|
 | [`data/README.md`](data/README.md) | Data folder architecture |
 | [`markdowns/HANDOVER.md`](markdowns/HANDOVER.md) | Complete technical handover |
-
-## License
-
-[Add your license here]
